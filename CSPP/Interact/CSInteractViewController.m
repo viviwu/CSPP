@@ -16,14 +16,15 @@
 
 #import "PYSearch.h"
 #import "SZCalendarPicker.h"
-//#import "CSNewsBoard.h"
+
+#import "XWScrollBanner.h"
 #import "DVVMovingTextView.h"
 
 #import "LiveSpeechTableController.h"
 
 @interface CSInteractViewController ()<UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (weak, nonatomic) IBOutlet UIImageView *newsBoard;
+@property (weak, nonatomic) IBOutlet XWScrollBanner *newsBoard;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet CSTableMenuHeader *menuHeader;
 @property (weak, nonatomic) IBOutlet UIView *tableFooter;

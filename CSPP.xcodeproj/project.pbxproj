@@ -183,7 +183,7 @@
 		0D3E00A82064A60400B1E586 /* XWTypewriterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00A72064A60300B1E586 /* XWTypewriterView.m */; };
 		0D3E00AB2064AC2D00B1E586 /* CSBizNewsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00AA2064AC2D00B1E586 /* CSBizNewsTableController.m */; };
 		0D3E00B52064C94600B1E586 /* CSAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00B42064C94600B1E586 /* CSAskViewController.m */; };
-		0D3E00B82064D6AF00B1E586 /* CSQATableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00B72064D6AF00B1E586 /* CSQATableController.m */; };
+		0D3E00B82064D6AF00B1E586 /* AskAnswerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00B72064D6AF00B1E586 /* AskAnswerTableController.m */; };
 		0D3E00BC2064E73200B1E586 /* CSSalonTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00BB2064E73200B1E586 /* CSSalonTableController.m */; };
 		0D3E00BF2064E75B00B1E586 /* CSSalonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00BE2064E75B00B1E586 /* CSSalonViewController.m */; };
 		0D3E00C32065029200B1E586 /* CSSalonInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00C22065029200B1E586 /* CSSalonInputCell.m */; };
@@ -957,6 +957,13 @@
 		4F4B2EDA206B8F0200D71AD0 /* NAKPlaybackIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B2ED7206B8F0200D71AD0 /* NAKPlaybackIndicatorView.m */; };
 		4F4B2EDB206B8F0200D71AD0 /* NAKPlaybackIndicatorViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B2ED8206B8F0200D71AD0 /* NAKPlaybackIndicatorViewStyle.m */; };
 		4F4E9BFD2069F2F000697F96 /* CSAnswersTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E9BFC2069F2F000697F96 /* CSAnswersTableController.m */; };
+		4F55F7C0208046C300A03878 /* Salon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F55F7BF208046C300A03878 /* Salon.storyboard */; };
+		4F55F7C320804A3C00A03878 /* SalonCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7C220804A3C00A03878 /* SalonCenterViewController.m */; };
+		4F55F7C6208050A600A03878 /* PPRankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7C5208050A600A03878 /* PPRankViewController.m */; };
+		4F55F7C82080529200A03878 /* PPRank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F55F7C72080529200A03878 /* PPRank.storyboard */; };
+		4F55F7CB2080532600A03878 /* PPFundsRankTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7CA2080532600A03878 /* PPFundsRankTableController.m */; };
+		4F55F7D120807A0800A03878 /* XWBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7CF20807A0800A03878 /* XWBanner.m */; };
+		4F55F7D220807A0800A03878 /* XWScrollBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7D020807A0800A03878 /* XWScrollBanner.m */; };
 		4F74CA0B206A1FE600365D02 /* city_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F74CA0A206A1FE500365D02 /* city_night.png */; };
 		4F74CA0D206A236A00365D02 /* ad_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F74CA0C206A236900365D02 /* ad_demo.jpg */; };
 		4F74CA10206A241000365D02 /* PPFlagshipStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74CA0F206A241000365D02 /* PPFlagshipStoreController.m */; };
@@ -1324,8 +1331,8 @@
 		0D3E00AA2064AC2D00B1E586 /* CSBizNewsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSBizNewsTableController.m; sourceTree = "<group>"; };
 		0D3E00B32064C94600B1E586 /* CSAskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAskViewController.h; sourceTree = "<group>"; };
 		0D3E00B42064C94600B1E586 /* CSAskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAskViewController.m; sourceTree = "<group>"; };
-		0D3E00B62064D6AF00B1E586 /* CSQATableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSQATableController.h; sourceTree = "<group>"; };
-		0D3E00B72064D6AF00B1E586 /* CSQATableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSQATableController.m; sourceTree = "<group>"; };
+		0D3E00B62064D6AF00B1E586 /* AskAnswerTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AskAnswerTableController.h; sourceTree = "<group>"; };
+		0D3E00B72064D6AF00B1E586 /* AskAnswerTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AskAnswerTableController.m; sourceTree = "<group>"; };
 		0D3E00BA2064E73200B1E586 /* CSSalonTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSalonTableController.h; sourceTree = "<group>"; };
 		0D3E00BB2064E73200B1E586 /* CSSalonTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSalonTableController.m; sourceTree = "<group>"; };
 		0D3E00BD2064E75B00B1E586 /* CSSalonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSalonViewController.h; sourceTree = "<group>"; };
@@ -2137,6 +2144,18 @@
 		4F4B2ED8206B8F0200D71AD0 /* NAKPlaybackIndicatorViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAKPlaybackIndicatorViewStyle.m; sourceTree = "<group>"; };
 		4F4E9BFB2069F2F000697F96 /* CSAnswersTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAnswersTableController.h; sourceTree = "<group>"; };
 		4F4E9BFC2069F2F000697F96 /* CSAnswersTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAnswersTableController.m; sourceTree = "<group>"; };
+		4F55F7BF208046C300A03878 /* Salon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Salon.storyboard; sourceTree = "<group>"; };
+		4F55F7C120804A3C00A03878 /* SalonCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonCenterViewController.h; sourceTree = "<group>"; };
+		4F55F7C220804A3C00A03878 /* SalonCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonCenterViewController.m; sourceTree = "<group>"; };
+		4F55F7C4208050A600A03878 /* PPRankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPRankViewController.h; sourceTree = "<group>"; };
+		4F55F7C5208050A600A03878 /* PPRankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRankViewController.m; sourceTree = "<group>"; };
+		4F55F7C72080529200A03878 /* PPRank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PPRank.storyboard; sourceTree = "<group>"; };
+		4F55F7C92080532600A03878 /* PPFundsRankTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPFundsRankTableController.h; sourceTree = "<group>"; };
+		4F55F7CA2080532600A03878 /* PPFundsRankTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPFundsRankTableController.m; sourceTree = "<group>"; };
+		4F55F7CD20807A0800A03878 /* XWBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWBanner.h; sourceTree = "<group>"; };
+		4F55F7CE20807A0800A03878 /* XWScrollBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWScrollBanner.h; sourceTree = "<group>"; };
+		4F55F7CF20807A0800A03878 /* XWBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWBanner.m; sourceTree = "<group>"; };
+		4F55F7D020807A0800A03878 /* XWScrollBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWScrollBanner.m; sourceTree = "<group>"; };
 		4F74CA0A206A1FE500365D02 /* city_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city_night.png; sourceTree = "<group>"; };
 		4F74CA0C206A236900365D02 /* ad_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_demo.jpg; sourceTree = "<group>"; };
 		4F74CA0E206A241000365D02 /* PPFlagshipStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPFlagshipStoreController.h; sourceTree = "<group>"; };
@@ -2230,6 +2249,7 @@
 		0D21DA52206342DC0053721F /* UNIVERSAL */ = {
 			isa = PBXGroup;
 			children = (
+				4F55F7CC20807A0800A03878 /* XWScrollBanner */,
 				4F4B2ED2206B8F0200D71AD0 /* NAKPlaybackIndicatorView */,
 				4F4B2EAF206B261200D71AD0 /* PYSearch */,
 				0D25D76920688B0A0000F215 /* TYVideoPlayer */,
@@ -2963,8 +2983,8 @@
 		0D3E00B92064D6C400B1E586 /* QA */ = {
 			isa = PBXGroup;
 			children = (
-				0D3E00B62064D6AF00B1E586 /* CSQATableController.h */,
-				0D3E00B72064D6AF00B1E586 /* CSQATableController.m */,
+				0D3E00B62064D6AF00B1E586 /* AskAnswerTableController.h */,
+				0D3E00B72064D6AF00B1E586 /* AskAnswerTableController.m */,
 				4F4E9BFB2069F2F000697F96 /* CSAnswersTableController.h */,
 				4F4E9BFC2069F2F000697F96 /* CSAnswersTableController.m */,
 				0D3E00B32064C94600B1E586 /* CSAskViewController.h */,
@@ -2976,6 +2996,9 @@
 		0D3E00C02064E76000B1E586 /* Salon */ = {
 			isa = PBXGroup;
 			children = (
+				4F55F7C120804A3C00A03878 /* SalonCenterViewController.h */,
+				4F55F7C220804A3C00A03878 /* SalonCenterViewController.m */,
+				4F55F7BF208046C300A03878 /* Salon.storyboard */,
 				0D3E00BA2064E73200B1E586 /* CSSalonTableController.h */,
 				0D3E00BB2064E73200B1E586 /* CSSalonTableController.m */,
 				0D3E00BD2064E75B00B1E586 /* CSSalonViewController.h */,
@@ -3901,6 +3924,11 @@
 		4F404624207C992300FF4DCE /* PrivatePlacement */ = {
 			isa = PBXGroup;
 			children = (
+				4F55F7C4208050A600A03878 /* PPRankViewController.h */,
+				4F55F7C5208050A600A03878 /* PPRankViewController.m */,
+				4F55F7C92080532600A03878 /* PPFundsRankTableController.h */,
+				4F55F7CA2080532600A03878 /* PPFundsRankTableController.m */,
+				4F55F7C72080529200A03878 /* PPRank.storyboard */,
 				4F74CA0E206A241000365D02 /* PPFlagshipStoreController.h */,
 				4F74CA0F206A241000365D02 /* PPFlagshipStoreController.m */,
 				0D25D78D2068EC970000F215 /* CSSeniorUserViewController.h */,
@@ -3951,6 +3979,17 @@
 				4F4B2ED8206B8F0200D71AD0 /* NAKPlaybackIndicatorViewStyle.m */,
 			);
 			path = NAKPlaybackIndicatorView;
+			sourceTree = "<group>";
+		};
+		4F55F7CC20807A0800A03878 /* XWScrollBanner */ = {
+			isa = PBXGroup;
+			children = (
+				4F55F7CD20807A0800A03878 /* XWBanner.h */,
+				4F55F7CE20807A0800A03878 /* XWScrollBanner.h */,
+				4F55F7CF20807A0800A03878 /* XWBanner.m */,
+				4F55F7D020807A0800A03878 /* XWScrollBanner.m */,
+			);
+			path = XWScrollBanner;
 			sourceTree = "<group>";
 		};
 		4F74CA11206A3CA200365D02 /* video */ = {
@@ -4212,6 +4251,7 @@
 				0D96567A2062279F000EB341 /* shop@3x.png in Resources */,
 				0D9655FF2062279F000EB341 /* light_at_the_end_of_tunnel@3x.png in Resources */,
 				0D9655032062279F000EB341 /* privacy@2x.png in Resources */,
+				4F55F7C0208046C300A03878 /* Salon.storyboard in Resources */,
 				0D96554B2062279F000EB341 /* delete@2x.png in Resources */,
 				0D96554F2062279F000EB341 /* diploma_1@2x.png in Resources */,
 				0D9655232062279F000EB341 /* entering_heaven_alive@2x.png in Resources */,
@@ -4705,6 +4745,7 @@
 				0D96555B2062279F000EB341 /* puzzle@2x.png in Resources */,
 				0D9655942062279F000EB341 /* delete_row@2x.png in Resources */,
 				0D9655592062279F000EB341 /* camera_identification@2x.png in Resources */,
+				4F55F7C82080529200A03878 /* PPRank.storyboard in Resources */,
 				0D9654D92062279F000EB341 /* flow_chart@2x.png in Resources */,
 				0D9654A62062279F000EB341 /* webcam@2x.png in Resources */,
 				0D9654C52062279F000EB341 /* tree_structure@2x.png in Resources */,
@@ -5014,6 +5055,7 @@
 				0D21DB6C206342DC0053721F /* PGPickerColumnCell.m in Sources */,
 				0D21DB5D206342DC0053721F /* CSView.m in Sources */,
 				0D21DBEA206343A40053721F /* VodPlayControlView.m in Sources */,
+				4F55F7C6208050A600A03878 /* PPRankViewController.m in Sources */,
 				0D21DB61206342DC0053721F /* CSNavigationController.m in Sources */,
 				0D21DC5820637AD60053721F /* JXTProgressLabel.m in Sources */,
 				0D21DB35206342DC0053721F /* SZCalendarPicker.m in Sources */,
@@ -5033,7 +5075,7 @@
 				0D21DB51206342DC0053721F /* ISEResultReadWord.m in Sources */,
 				0D21DB53206342DC0053721F /* ISEResultSentence.m in Sources */,
 				0D3E00C92065133D00B1E586 /* CSSearchViewController.m in Sources */,
-				0D3E00B82064D6AF00B1E586 /* CSQATableController.m in Sources */,
+				0D3E00B82064D6AF00B1E586 /* AskAnswerTableController.m in Sources */,
 				0D21DB82206342DC0053721F /* VENTouchLock.m in Sources */,
 				0D21DB5E206342DC0053721F /* NSString+XW.m in Sources */,
 				4F16B0AA206C791700F20A45 /* CSMutiMediaPlayer.m in Sources */,
@@ -5052,9 +5094,11 @@
 				4F16B150206CB4FD00F20A45 /* CSTxtReadPlayerController.m in Sources */,
 				4F4B2EC4206B261200D71AD0 /* UIView+PYSearchExtension.m in Sources */,
 				0D25D78F2068EC970000F215 /* CSSeniorUserViewController.m in Sources */,
+				4F55F7CB2080532600A03878 /* PPFundsRankTableController.m in Sources */,
 				0D21DB4F206342DC0053721F /* ISEResultReadSyllable.m in Sources */,
 				0D21DB42206342DC0053721F /* AlertView.m in Sources */,
 				0D21DB47206342DC0053721F /* IATViewController.m in Sources */,
+				4F55F7D220807A0800A03878 /* XWScrollBanner.m in Sources */,
 				0D21DB3C206342DC0053721F /* SBJson4StreamTokeniser.m in Sources */,
 				0D21DB3E206342DC0053721F /* SBJson4StreamWriterState.m in Sources */,
 				0D21DBDB206343A40053721F /* PlayController.m in Sources */,
@@ -5069,6 +5113,7 @@
 				4FAAFB9E207F765600676796 /* DomainMasterTableController.m in Sources */,
 				0D21DBDF206343A40053721F /* PlayerViewModel.m in Sources */,
 				0D21DB32206342DC0053721F /* KSYQRCodeVC.m in Sources */,
+				4F55F7C320804A3C00A03878 /* SalonCenterViewController.m in Sources */,
 				4FAAFBA1207F765600676796 /* UserConsultInfoTableController.m in Sources */,
 				0D21DB67206342DC0053721F /* UIColor+PGHex.m in Sources */,
 				0D21DB3A206342DC0053721F /* PopupView.m in Sources */,
@@ -5100,6 +5145,7 @@
 				4FA64818207B1626001C2212 /* OpinionViewController.m in Sources */,
 				0D21DBD7206343A40053721F /* RecordeViewController.m in Sources */,
 				0D21DB2F206342DC0053721F /* KSYUIView.m in Sources */,
+				4F55F7D120807A0800A03878 /* XWBanner.m in Sources */,
 				0D21DBEE206343A40053721F /* VodPlayOperationView.m in Sources */,
 				0D25D78320688B0A0000F215 /* TYVideoControlView.m in Sources */,
 				0D21DB2B206342DC0053721F /* KSYGetDeviceName.m in Sources */,

@@ -17,11 +17,13 @@
 
 @interface UIView(Base)
 
+/*
 @property (assign,nonatomic) IBInspectable CGFloat cornerRadius;
 @property (assign,nonatomic) IBInspectable CGFloat borderWidth;
 @property (strong,nonatomic) IBInspectable UIColor  *borderColor;
 // set background hex color
 @property (assign,nonatomic) IBInspectable NSString *hexRgbColor; 
+*/
 
 @end
 
@@ -45,5 +47,7 @@
 - (id)viewControllerFromStoryboard:(NSString*)stroyboardName identifier:(NSString*)identifier;
 - (id)consultStoryboardControllerWithID:(NSString*)stroyboardID;
 - (id)liveStoryboardControllerWithID:(NSString*)stroyboardID;
+- (id)salonStoryboardControllerWithID:(NSString*)stroyboardID;
+
 
 @end

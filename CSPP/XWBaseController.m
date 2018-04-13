@@ -16,6 +16,7 @@
 
 IB_DESIGNABLE
 @implementation UIView(Base)
+/*
 - (void)setCornerRadius:(CGFloat)cornerRadius {
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = cornerRadius > 0;
@@ -63,6 +64,7 @@ IB_DESIGNABLE
 - (NSString *)hexRgbColor{
     return @"0xffffff";
 }
+*/
 
 @end
 
@@ -101,6 +103,10 @@ IB_DESIGNABLE
 
 - (id)liveStoryboardControllerWithID:(NSString*)stroyboardID{
     return [[UIStoryboard storyboardWithName:@"LiveSpeech" bundle:nil] instantiateViewControllerWithIdentifier:stroyboardID];
+}
+
+- (id)salonStoryboardControllerWithID:(NSString*)stroyboardID{
+    return [[UIStoryboard storyboardWithName:@"Salon" bundle:nil] instantiateViewControllerWithIdentifier:stroyboardID];
 }
 
 

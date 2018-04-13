@@ -83,11 +83,12 @@
 }
 
 -(void)setUpTTSiFly{
+    
     //Set log level
-    [IFlySetting setLogFile:LVL_ALL];
+    [IFlySetting setLogFile:LVL_LOW];
     
     //Set whether to output log messages in Xcode console
-    [IFlySetting showLogcat:YES];
+    [IFlySetting showLogcat:NO];
     
     //Set the local storage path of SDK
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
@@ -96,7 +97,6 @@
     
     //Set APPID
     NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",APPID_VALUE];
-    
     //Configure and initialize iflytek services.(This interface must been invoked in application:didFinishLaunchingWithOptions:)
     [IFlySpeechUtility createUtility:initString];
 }

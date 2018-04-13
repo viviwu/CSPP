@@ -1,5 +1,5 @@
 //
-//  CSQATableController.h
+//  AskAnswerTableController.h
 //  CSPP
 //
 //  Created by vivi wu on 2018/3/23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CSQATableController : UITableViewController
+@interface AskAnswerTableController : UITableViewController
 
 @end
