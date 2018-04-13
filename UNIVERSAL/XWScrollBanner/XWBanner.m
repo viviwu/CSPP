@@ -50,7 +50,11 @@
 - (void)setModel:(XWBannerModel *)model
 {
     _model = model;
-    UIImage *placeholderImage = [UIImage imageNamed:model.imgName];
+#warning add a placeholderImage
+    UIImage * placeholderImage = [UIImage new];
+    if (model.imgName) {
+        placeholderImage = [UIImage imageNamed:model.imgName];
+    }
     if (model.imgURL) {
         [self.imgView sd_setImageWithURL:model.imgURL placeholderImage:placeholderImage];
     }else if(model.imgName){

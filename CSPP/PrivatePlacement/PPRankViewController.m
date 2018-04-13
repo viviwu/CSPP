@@ -7,21 +7,56 @@
 //
 
 #import "PPRankViewController.h"
+#import "PPFundsRankTableController.h"
 
 @interface PPRankViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segCtr;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) UIScrollView *scrollView;
+@property (strong, nonatomic) PPFundsRankTableController *fundsRankTableController;
 
 @end
 
 @implementation PPRankViewController
 
+- (id)PPRankStoryboardControllerWithID:(NSString*)stroyboardID{
+    return [[UIStoryboard storyboardWithName:@"PPRank" bundle:nil] instantiateViewControllerWithIdentifier:stroyboardID];
+}
+
+- (PPFundsRankTableController *)fundsRankTableController{
+    if(nil ==_fundsRankTableController){
+        _fundsRankTableController = [self PPRankStoryboardControllerWithID:@"PPFundsRankTableController"];
+    }
+    return _fundsRankTableController;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.scrollView.contentSize = CGSizeMake(kScreenW * 3, kScreenH);
+    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, SafeAreaTopHeight, kScreenW, kScreenH)];
+    [self.view addSubview:self.scrollView];
+    self.scrollView.scrollsToTop = YES;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.contentSize = CGSizeMake(kScreenW * 3, 0);
+    self.scrollView.pagingEnabled = YES;
+    
+    [self addChildViewController:self.fundsRankTableController];
+//    NSLog(@"kScreenW==%f", kScreenW);
+    
+    [self.fundsRankTableController.view setFrame:CGRectMake(0, 0, kScreenW, kScreenH - 100.0)];
+    [self.scrollView addSubview:self.fundsRankTableController.view];
     
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"self.fundsRankTableController.view.frame.size.width==%f", self.fundsRankTableController.view.frame.size.width);
 }
 
 - (IBAction)categoryChanged:(UISegmentedControl *)sender {

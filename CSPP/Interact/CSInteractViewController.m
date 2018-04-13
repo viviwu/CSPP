@@ -69,6 +69,21 @@
     self.sectionTitles = @[@"路演", @"聊吧", @"问答", @"咨询", @"观点", @"Live", @"沙龙", @"FM资讯", @"私募学院"];
     self.sectionImages = @[@"camcorder_pro", @"webcam", @"faq", @"voice_presentation", @"idea", @"lightning", @"invite", @"customer_support", @"graduation_cap"];
 //    [self.view bringSubviewToFront:self.mediaToolbar];
+    
+    NSArray * models = [self fakeModels];
+    NSMutableArray * sources = [NSMutableArray array];
+    for (int i=0; i<models.count; i++) {
+        NSDictionary * model = models[i];
+        XWBannerModel *bannerModel = [[XWBannerModel alloc]init];
+        bannerModel.title = model[@"rank"];
+        bannerModel.imgURL = [NSURL URLWithString:model[@"image"]];
+        bannerModel.link = model[@"url"];
+        [sources addObject:bannerModel];
+    }
+    _newsBoard.dataSource = sources;
+    _newsBoard.bannerClickHandle = ^(NSInteger currentPage, XWBannerModel * model){
+        NSLog(@"currentPage is: %ld", currentPage);
+    };
     self.tableView.tableHeaderView = _newsBoard;
     
     //如果iOS的系统是11.0，会有这样一个宏定义“#define __IPHONE_11_0  110000”；如果系统版本低于11.0则没有这个宏定义
@@ -83,12 +98,14 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"transparence"] forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [_newsBoard stopTimer];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -374,6 +391,42 @@
  // Pass the selected object to the new view controller.
  }
  */
+
+- (NSArray*)fakeModels{
+    return @[
+             @{
+                 @"image" : @"https://oss-cn-hangzhou.aliyuncs.com/jfzapp-static2/ad/1049db96aaf99f3f92fc225c006648a6.jpg",
+                 @"url" : @"https://h5.jinfuzi.com/app/community/communityDetail?articleId=6816",
+                 @"rank" : @"202"
+                 },
+             @{
+                 @"image" : @"https://oss-cn-hangzhou.aliyuncs.com/jfzapp-static2/ad/f601d614da6a1a56f30da4fe5fd5e501.jpg",
+                 @"url" : @"https://h5.jinfuzi.com/topic/pevc/tg-34",
+                 @"rank" : @"201"
+                 },
+             @{
+                 @"image" : @"https://oss-cn-hangzhou.aliyuncs.com/jfzapp-static2/ad/e0ffc289900db4adb9060df0cedf056b.jpg",
+                 @"url" : @"https://h5.jinfuzi.com/vueApp/community/communityDetail/5650",
+                 @"rank" : @"200"
+                 },
+             @{
+                 @"image" : @"https://jfz-static2.oss-cn-hangzhou.aliyuncs.com/main/img/92a7d6f5a9d2996342becbaaf6391fde.jpg",
+                 @"url" : @"https://h5.jinfuzi.com/topic/pof/tg-135",
+                 @"rank" : @"194"
+                 },
+             @{
+                 @"image" : @"https://oss-cn-hangzhou.aliyuncs.com/jfzapp-static2/ad/89f6c1a5a9ebf5e15277087502388800.jpg",
+                 @"url" : @"https://h5.jinfuzi.com/activity/other/tg20",
+                 @"rank" : @"190"
+                 },
+             @{
+                 @"image" : @"https://jfz-static2.oss-cn-hangzhou.aliyuncs.com/main/img/96de6f1a5cb64f9f99ace06b8e04bffe.jpg",
+                 @"url" : @"https://h5.jinfuzi.com/topic/pevc/tg-30",
+                 @"rank" : @"162"
+                 }
+             ];
+}
+
 
 @end
 

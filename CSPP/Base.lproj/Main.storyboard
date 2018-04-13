@@ -443,18 +443,7 @@
                     <view key="view" contentMode="scaleToFill" id="zvW-oZ-5Cm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReP-nM-p8K">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ReP-nM-p8K" firstAttribute="leading" secondItem="8EB-EL-tB2" secondAttribute="leading" id="Eec-qJ-95w"/>
-                            <constraint firstItem="ReP-nM-p8K" firstAttribute="top" secondItem="8EB-EL-tB2" secondAttribute="top" id="Vi4-Lj-OF7"/>
-                            <constraint firstAttribute="bottom" secondItem="ReP-nM-p8K" secondAttribute="bottom" id="YFh-AG-8G7"/>
-                            <constraint firstItem="ReP-nM-p8K" firstAttribute="trailing" secondItem="8EB-EL-tB2" secondAttribute="trailing" id="fZP-jW-aUw"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8EB-EL-tB2"/>
                     </view>
                     <navigationItem key="navigationItem" id="6pQ-mQ-lah">
@@ -473,7 +462,6 @@
                         </segmentedControl>
                     </navigationItem>
                     <connections>
-                        <outlet property="scrollView" destination="ReP-nM-p8K" id="q0J-UR-79n"/>
                         <outlet property="segCtr" destination="QJk-p2-7ah" id="Fks-ko-nbc"/>
                     </connections>
                 </viewController>
