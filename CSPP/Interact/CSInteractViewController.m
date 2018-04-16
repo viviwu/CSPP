@@ -87,11 +87,11 @@
     self.tableView.tableHeaderView = _newsBoard;
     
     //如果iOS的系统是11.0，会有这样一个宏定义“#define __IPHONE_11_0  110000”；如果系统版本低于11.0则没有这个宏定义
-#ifdef __IPHONE_11_0
-    if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+//#ifdef __IPHONE_11_0
+//    if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
 //        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
-#endif
+//    }
+//#endif
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -225,14 +225,14 @@
             identifier = kSegue_faceTime;
             break;
         case 2:
-            identifier = kSegue_faq;     //;
-            //            identifier = kSegue_consult;     //;
+//            identifier = kSegue_faq;     //;
+            identifier = kSegue_consult;     //;
             break;
         case 3:
             identifier = kSegue_salon;
             break;
         case 4:
-            //            identifier = kSegue_opinion;     //;
+            identifier = kSegue_opinion;     //;
             break;
         case 5:{
 //            identifier = kSegue_liveclass;     //kSegue_faq;

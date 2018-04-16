@@ -188,6 +188,7 @@
                         <segue destination="icj-TS-xtS" kind="show" identifier="roadShow" id="sMh-lu-W0H"/>
                         <segue destination="TS3-UK-CjU" kind="show" identifier="consult" id="U1h-Zr-BaB"/>
                         <segue destination="NZ6-um-Czu" kind="show" identifier="salon" id="wT4-lr-JdB"/>
+                        <segue destination="qlN-as-wTH" kind="show" identifier="opinion" id="fC1-xX-FaJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As7-ee-F9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -828,7 +829,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uid-yO-De0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-647" y="2687"/>
+            <point key="canvasLocation" x="-567" y="2687"/>
         </scene>
         <!--沙龙-->
         <scene sceneID="Jmt-cb-zOd">
@@ -884,22 +885,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsh-O1-Vpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="1841"/>
+            <point key="canvasLocation" x="1017" y="1845"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jfa-Wx-fZ2">
+        <!--观点-->
+        <scene sceneID="Xd4-3t-A5g">
             <objects>
-                <viewController id="Qqr-pL-KJb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RS0-JQ-cTr">
+                <viewController title="观点" hidesBottomBarWhenPushed="YES" id="qlN-as-wTH" customClass="WBStatusTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOg-we-8nt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="AhJ-IW-PH4"/>
+                        <viewLayoutGuide key="safeArea" id="km5-JE-RyI"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LW2-dr-dww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhA-s6-c3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="1841"/>
+            <point key="canvasLocation" x="1935" y="1835"/>
         </scene>
         <!--付费咨询-->
         <scene sceneID="MaZ-r3-zYp">
@@ -945,7 +946,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ure-BA-xFb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="868"/>
+            <point key="canvasLocation" x="222" y="1835"/>
         </scene>
     </scenes>
     <resources>

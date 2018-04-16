@@ -33,6 +33,9 @@ PODS:
   - SSKeychain (1.2.3)
   - Toast (4.0.0)
   - UICountingLabel (1.2.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
@@ -49,10 +52,29 @@ DEPENDENCIES:
   - SDWebImage (~> 4.0)
   - SSKeychain (~> 1.2.2)
   - Toast
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - BarrageRenderer
+    - Bugly
+    - Colours
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - PNChart
+    - SDWebImage
+    - SSKeychain
+    - Toast
+    - UICountingLabel
+    - YYKit
 
 EXTERNAL SOURCES:
   KSYMediaPlayer_iOS:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -70,7 +92,8 @@ SPEC CHECKSUMS:
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: c6e0a3b64f09c8e25ce602e2e895f614b561fc7e
+PODFILE CHECKSUM: cba90b784eaa8eb946e3d29d7ff6d6cae66b328b
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

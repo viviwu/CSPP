@@ -25,6 +25,7 @@ def common
 #    pod 'PYSearch'
     pod 'Toast'
     pod 'Bugly'
+    pod 'YYKit'
     
     #默认使用静态直播库
     #pod 'KSYMediaPlayer_iOS',                              :path => '../'
@@ -41,10 +42,6 @@ def common
     #使用动态点播库
     #pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod_dy',       :path => '../'
 end
-
-#target 'CSPP' do
-#	common
-#end
 
 target 'CSPP' do
     common
