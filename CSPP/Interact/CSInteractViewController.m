@@ -66,8 +66,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.sectionTitles = @[@"路演", @"聊吧", @"问答", @"咨询", @"观点", @"Live", @"沙龙", @"FM资讯", @"私募学院"];
-    self.sectionImages = @[@"camcorder_pro", @"webcam", @"faq", @"voice_presentation", @"idea", @"lightning", @"invite", @"customer_support", @"graduation_cap"];
+    self.sectionTitles = @[@"路演", @"聊吧", @"问答", @"沙龙", @"观点", @"Live"/*, @"FM资讯", @"私募学院"*/];
+    self.sectionImages = @[@"camcorder_pro", @"webcam", @"faq", @"invite", @"idea", @"lightning" /*, @"voice_presentation", @"customer_support", @"graduation_cap"*/];
 //    [self.view bringSubviewToFront:self.mediaToolbar];
     
     NSArray * models = [self fakeModels];
@@ -89,7 +89,7 @@
     //如果iOS的系统是11.0，会有这样一个宏定义“#define __IPHONE_11_0  110000”；如果系统版本低于11.0则没有这个宏定义
 #ifdef __IPHONE_11_0
     if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
-        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
 #endif
 }
@@ -97,14 +97,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"transparence"] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"transparence"] forBarMetrics:UIBarMetricsDefault];
     
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [_newsBoard stopTimer];
 }
 
@@ -226,12 +226,13 @@
             break;
         case 2:
             identifier = kSegue_faq;     //;
+            //            identifier = kSegue_consult;     //;
             break;
         case 3:
-            identifier = kSegue_consult;     //;
+            identifier = kSegue_salon;
             break;
         case 4:
-            identifier = kSegue_opinion;     //;
+            //            identifier = kSegue_opinion;     //;
             break;
         case 5:{
 //            identifier = kSegue_liveclass;     //kSegue_faq;
@@ -240,14 +241,14 @@
         }
             break;
         case 6:
-            identifier = kSegue_salon;
+            
             break;
         case 7:
-            identifier = kSegue_newsFM;
+//            identifier = kSegue_newsFM;
             break;
         case 8:
-            identifier = kSegue_ppAcademy;
-            break; 
+//            identifier = kSegue_ppAcademy;
+            break;
         default:
             break;
     }

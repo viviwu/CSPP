@@ -7,6 +7,7 @@
 //
 
 #import "LiveSpeechTableController.h"
+#import "LiveSpeechViewController.h"
 
 #define kMenuCellID @"livemenu"
 #define kClassCellID @"liveclass"
