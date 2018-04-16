@@ -14,7 +14,7 @@
 
 //@$$$$$$$$$$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$
 
-IB_DESIGNABLE
+//IB_DESIGNABLE
 @implementation UIView(Base)
 /*
 - (void)setCornerRadius:(CGFloat)cornerRadius {
