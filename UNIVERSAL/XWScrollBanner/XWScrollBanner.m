@@ -121,11 +121,11 @@
 
 - (void)scrollPage:(NSTimer*)timer{
     if (scrollRepeat *_dataSource.count-1 < _index){
+        NSLog(@"_index==%ld", (long)_index);
         _index = 0;
     }
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_index inSection:0];
     [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
-    NSLog(@"_index==%ld", (long)_index);
     _index++;
 }
 

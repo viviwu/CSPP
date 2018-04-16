@@ -11,7 +11,7 @@
 #import "PPManagersRankTableController.h"
 #import "PPCorpsRankTableController.h"
 
-@interface PPRankViewController ()
+@interface PPRankViewController ()<UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segCtr;
 @property (strong, nonatomic) UIScrollView *scrollView;
@@ -54,16 +54,17 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.contentSize = CGSizeMake(kScreenW * 3, 0);
     self.scrollView.pagingEnabled = YES;
-    
-    [self addChildViewController:self.fundsRankTableController];
+    self.scrollView.delegate = self;
 //    NSLog(@"kScreenW==%f", kScreenW);
-    
+    [self addChildViewController:self.fundsRankTableController];
     [self.fundsRankTableController.view setFrame:CGRectMake(0, 0, kScreenW, kScreenH - 100.0)];
     [self.scrollView addSubview:self.fundsRankTableController.view];
     
+    [self addChildViewController:self.managersRankTableController];
     [self.managersRankTableController.view setFrame:CGRectMake(kScreenW, 0, kScreenW, kScreenH - 100.0)];
     [self.scrollView addSubview:self.managersRankTableController.view];
     
+    [self addChildViewController:self.corpsRankTableController];
     [self.corpsRankTableController.view setFrame:CGRectMake(kScreenW*2, 0, kScreenW, kScreenH - 100.0)];
     [self.scrollView addSubview:self.corpsRankTableController.view];
     
@@ -86,7 +87,12 @@
     [self.scrollView scrollRectToVisible:CGRectMake(kScreenW * index, 0, kScreenW, kScreenH) animated:NO];
 }
 
-//- (void)scroll
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    CGFloat offsetX = scrollView.contentOffset.x;
+    NSLog(@"offsetX==%f", offsetX);
+    _segCtr.selectedSegmentIndex =(NSInteger)(offsetX/kScreenW);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

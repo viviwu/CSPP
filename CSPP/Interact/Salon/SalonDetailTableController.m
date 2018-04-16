@@ -1,20 +1,18 @@
 //
-//  CSSalonTableController.m
+//  SalonDetailTableController.m
 //  CSPP
 //
-//  Created by vivi wu on 2018/3/23.
+//  Created by csco on 2018/4/16.
 //  Copyright © 2018年 vivi wu. All rights reserved.
 //
 
-#import "CSSalonTableController.h"
+#import "SalonDetailTableController.h"
 
-@interface CSSalonTableController ()
-@property (weak, nonatomic) IBOutlet UIView *headerView;
-@property (weak, nonatomic) IBOutlet UIView *segView;
+@interface SalonDetailTableController ()
 
 @end
 
-@implementation CSSalonTableController
+@implementation SalonDetailTableController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,32 +30,26 @@
 }
 
 #pragma mark - Table view data source
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 10;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"salon" forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
-
-- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return _segView;
-}
-
+*/
 
 /*
 // Override to support conditional editing of the table view.

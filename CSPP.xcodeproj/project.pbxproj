@@ -184,8 +184,8 @@
 		0D3E00AB2064AC2D00B1E586 /* CSBizNewsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00AA2064AC2D00B1E586 /* CSBizNewsTableController.m */; };
 		0D3E00B52064C94600B1E586 /* CSAskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00B42064C94600B1E586 /* CSAskViewController.m */; };
 		0D3E00B82064D6AF00B1E586 /* AskAnswerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00B72064D6AF00B1E586 /* AskAnswerTableController.m */; };
-		0D3E00BC2064E73200B1E586 /* CSSalonTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00BB2064E73200B1E586 /* CSSalonTableController.m */; };
-		0D3E00BF2064E75B00B1E586 /* CSSalonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00BE2064E75B00B1E586 /* CSSalonViewController.m */; };
+		0D3E00BC2064E73200B1E586 /* SalonChoicenessTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00BB2064E73200B1E586 /* SalonChoicenessTableController.m */; };
+		0D3E00BF2064E75B00B1E586 /* CreateSalonTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00BE2064E75B00B1E586 /* CreateSalonTableController.m */; };
 		0D3E00C32065029200B1E586 /* CSSalonInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00C22065029200B1E586 /* CSSalonInputCell.m */; };
 		0D3E00C92065133D00B1E586 /* CSSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00C82065133D00B1E586 /* CSSearchViewController.m */; };
 		0D3E00CC20653F1400B1E586 /* CSLiveVideoCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E00CB20653F1400B1E586 /* CSLiveVideoCollectionController.m */; };
@@ -972,6 +972,7 @@
 		4F55F7CB2080532600A03878 /* PPFundsRankTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7CA2080532600A03878 /* PPFundsRankTableController.m */; };
 		4F55F7D120807A0800A03878 /* XWBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7CF20807A0800A03878 /* XWBanner.m */; };
 		4F55F7D220807A0800A03878 /* XWScrollBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7D020807A0800A03878 /* XWScrollBanner.m */; };
+		4F572CC420848E15000EB7EC /* SalonDetailTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F572CC320848E15000EB7EC /* SalonDetailTableController.m */; };
 		4F74CA0B206A1FE600365D02 /* city_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F74CA0A206A1FE500365D02 /* city_night.png */; };
 		4F74CA0D206A236A00365D02 /* ad_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F74CA0C206A236900365D02 /* ad_demo.jpg */; };
 		4F74CA10206A241000365D02 /* PPFlagshipStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74CA0F206A241000365D02 /* PPFlagshipStoreController.m */; };
@@ -979,6 +980,9 @@
 		4F74CA17206A3DC400365D02 /* CSVodPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74CA16206A3DC400365D02 /* CSVodPlayController.m */; };
 		4F81699520842A7C006C5476 /* XWFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F81699320842A7C006C5476 /* XWFilterCell.m */; };
 		4F81699620842A7C006C5476 /* XWFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F81699420842A7C006C5476 /* XWFilterView.m */; };
+		4F81699A20842ED6006C5476 /* quota.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4F81699720842ED4006C5476 /* quota.PNG */; };
+		4F81699B20842ED6006C5476 /* circle.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4F81699820842ED5006C5476 /* circle.PNG */; };
+		4F81699C20842ED6006C5476 /* radar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4F81699920842ED6006C5476 /* radar.PNG */; };
 		4FA64818207B1626001C2212 /* OpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA64817207B1626001C2212 /* OpinionViewController.m */; };
 		4FAAFB7A207F756700676796 /* XWBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAAFB78207F756700676796 /* XWBaseController.m */; };
 		4FAAFB9E207F765600676796 /* DomainMasterTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAAFB91207F765500676796 /* DomainMasterTableController.m */; };
@@ -1343,10 +1347,10 @@
 		0D3E00B42064C94600B1E586 /* CSAskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAskViewController.m; sourceTree = "<group>"; };
 		0D3E00B62064D6AF00B1E586 /* AskAnswerTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AskAnswerTableController.h; sourceTree = "<group>"; };
 		0D3E00B72064D6AF00B1E586 /* AskAnswerTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AskAnswerTableController.m; sourceTree = "<group>"; };
-		0D3E00BA2064E73200B1E586 /* CSSalonTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSalonTableController.h; sourceTree = "<group>"; };
-		0D3E00BB2064E73200B1E586 /* CSSalonTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSalonTableController.m; sourceTree = "<group>"; };
-		0D3E00BD2064E75B00B1E586 /* CSSalonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSalonViewController.h; sourceTree = "<group>"; };
-		0D3E00BE2064E75B00B1E586 /* CSSalonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSalonViewController.m; sourceTree = "<group>"; };
+		0D3E00BA2064E73200B1E586 /* SalonChoicenessTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonChoicenessTableController.h; sourceTree = "<group>"; };
+		0D3E00BB2064E73200B1E586 /* SalonChoicenessTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonChoicenessTableController.m; sourceTree = "<group>"; };
+		0D3E00BD2064E75B00B1E586 /* CreateSalonTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateSalonTableController.h; sourceTree = "<group>"; };
+		0D3E00BE2064E75B00B1E586 /* CreateSalonTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateSalonTableController.m; sourceTree = "<group>"; };
 		0D3E00C12065029200B1E586 /* CSSalonInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSalonInputCell.h; sourceTree = "<group>"; };
 		0D3E00C22065029200B1E586 /* CSSalonInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSalonInputCell.m; sourceTree = "<group>"; };
 		0D3E00C72065133D00B1E586 /* CSSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSearchViewController.h; sourceTree = "<group>"; };
@@ -2179,6 +2183,8 @@
 		4F55F7CE20807A0800A03878 /* XWScrollBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWScrollBanner.h; sourceTree = "<group>"; };
 		4F55F7CF20807A0800A03878 /* XWBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWBanner.m; sourceTree = "<group>"; };
 		4F55F7D020807A0800A03878 /* XWScrollBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWScrollBanner.m; sourceTree = "<group>"; };
+		4F572CC220848E15000EB7EC /* SalonDetailTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonDetailTableController.h; sourceTree = "<group>"; };
+		4F572CC320848E15000EB7EC /* SalonDetailTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonDetailTableController.m; sourceTree = "<group>"; };
 		4F74CA0A206A1FE500365D02 /* city_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city_night.png; sourceTree = "<group>"; };
 		4F74CA0C206A236900365D02 /* ad_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_demo.jpg; sourceTree = "<group>"; };
 		4F74CA0E206A241000365D02 /* PPFlagshipStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPFlagshipStoreController.h; sourceTree = "<group>"; };
@@ -2191,6 +2197,9 @@
 		4F81699220842A7C006C5476 /* XWFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWFilterView.h; sourceTree = "<group>"; };
 		4F81699320842A7C006C5476 /* XWFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWFilterCell.m; sourceTree = "<group>"; };
 		4F81699420842A7C006C5476 /* XWFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWFilterView.m; sourceTree = "<group>"; };
+		4F81699720842ED4006C5476 /* quota.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quota.PNG; sourceTree = "<group>"; };
+		4F81699820842ED5006C5476 /* circle.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.PNG; sourceTree = "<group>"; };
+		4F81699920842ED6006C5476 /* radar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.PNG; sourceTree = "<group>"; };
 		4FA64816207B1626001C2212 /* OpinionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpinionViewController.h; sourceTree = "<group>"; };
 		4FA64817207B1626001C2212 /* OpinionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpinionViewController.m; sourceTree = "<group>"; };
 		4FAAFB78207F756700676796 /* XWBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWBaseController.m; sourceTree = "<group>"; };
@@ -3027,10 +3036,12 @@
 				4F55F7C120804A3C00A03878 /* SalonCenterViewController.h */,
 				4F55F7C220804A3C00A03878 /* SalonCenterViewController.m */,
 				4F55F7BF208046C300A03878 /* Salon.storyboard */,
-				0D3E00BA2064E73200B1E586 /* CSSalonTableController.h */,
-				0D3E00BB2064E73200B1E586 /* CSSalonTableController.m */,
-				0D3E00BD2064E75B00B1E586 /* CSSalonViewController.h */,
-				0D3E00BE2064E75B00B1E586 /* CSSalonViewController.m */,
+				0D3E00BA2064E73200B1E586 /* SalonChoicenessTableController.h */,
+				0D3E00BB2064E73200B1E586 /* SalonChoicenessTableController.m */,
+				4F572CC220848E15000EB7EC /* SalonDetailTableController.h */,
+				4F572CC320848E15000EB7EC /* SalonDetailTableController.m */,
+				0D3E00BD2064E75B00B1E586 /* CreateSalonTableController.h */,
+				0D3E00BE2064E75B00B1E586 /* CreateSalonTableController.m */,
 				0D3E00C12065029200B1E586 /* CSSalonInputCell.h */,
 				0D3E00C22065029200B1E586 /* CSSalonInputCell.m */,
 			);
@@ -3108,9 +3119,7 @@
 		0D9651672062279D000EB341 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				0D25D78B20689D660000F215 /* test_264.mp4 */,
 				0D21DC4A206377470053721F /* hotShow.json */,
-				0D6B7BF42083A259000B964D /* star_half.png */,
 				0D6B7BF02083A1F3000B964D /* 5star_20@2x.png */,
 				0D6B7BF12083A1F3000B964D /* 5star_20@3x.png */,
 				0D9651682062279D000EB341 /* 30@2x */,
@@ -3528,6 +3537,11 @@
 		0D9652E72062279E000EB341 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				4F81699820842ED5006C5476 /* circle.PNG */,
+				4F81699720842ED4006C5476 /* quota.PNG */,
+				4F81699920842ED6006C5476 /* radar.PNG */,
+				0D25D78B20689D660000F215 /* test_264.mp4 */,
+				0D6B7BF42083A259000B964D /* star_half.png */,
 				4FAAFBA5207F792F00676796 /* transparence@2x.png */,
 				4FF0C830206DEEC400E5A6DE /* timg.jpeg */,
 				4F4B2ECA206B44B700D71AD0 /* launch_image.png */,
@@ -4459,6 +4473,7 @@
 				0D9656D92062279F000EB341 /* selfie@3x.png in Resources */,
 				0D9655572062279F000EB341 /* copyleft@2x.png in Resources */,
 				0D9654FA2062279F000EB341 /* print@2x.png in Resources */,
+				4F81699B20842ED6006C5476 /* circle.PNG in Resources */,
 				0D96565E2062279F000EB341 /* package@3x.png in Resources */,
 				0D9654F42062279F000EB341 /* medium_priority@2x.png in Resources */,
 				0D9656272062279F000EB341 /* timeline@3x.png in Resources */,
@@ -4725,6 +4740,7 @@
 				0D9656F02062279F000EB341 /* right_down@3x.png in Resources */,
 				0D9656B32062279F000EB341 /* neutral_decision@3x.png in Resources */,
 				0D96558A2062279F000EB341 /* reuse@2x.png in Resources */,
+				4F81699A20842ED6006C5476 /* quota.PNG in Resources */,
 				0D9655F62062279F000EB341 /* camera@3x.png in Resources */,
 				0D9655762062279F000EB341 /* broken_link@2x.png in Resources */,
 				0D96560C2062279F000EB341 /* Details Popup_@3x.png in Resources */,
@@ -4939,6 +4955,7 @@
 				0D9654F82062279F000EB341 /* slr_back_side@2x.png in Resources */,
 				0D9656722062279F000EB341 /* in_transit@3x.png in Resources */,
 				0D9655202062279F000EB341 /* data_backup@2x.png in Resources */,
+				4F81699C20842ED6006C5476 /* radar.PNG in Resources */,
 				0D9656112062279F000EB341 /* home@3x.png in Resources */,
 				0D9656CA2062279F000EB341 /* right@3x.png in Resources */,
 				0D25D78C20689D660000F215 /* test_264.mp4 in Resources */,
@@ -5212,7 +5229,7 @@
 				0D21DB2B206342DC0053721F /* KSYGetDeviceName.m in Sources */,
 				0D6B7BAF208362ED000B964D /* PPFundPageViewController.m in Sources */,
 				0D25D74720687DA50000F215 /* CSCentralManager.m in Sources */,
-				0D3E00BF2064E75B00B1E586 /* CSSalonViewController.m in Sources */,
+				0D3E00BF2064E75B00B1E586 /* CreateSalonTableController.m in Sources */,
 				0D96572C206231C8000EB341 /* CSMedia.m in Sources */,
 				0D21DB77206342DC0053721F /* TAPageControl.m in Sources */,
 				0D21DC322063471B0053721F /* CSProgramTableController.m in Sources */,
@@ -5237,12 +5254,13 @@
 				4FAAFBA4207F765600676796 /* QuestionTableController.m in Sources */,
 				0D21DB75206342DC0053721F /* SDCollectionViewCell.m in Sources */,
 				0D21DBD3206343A40053721F /* SettingDataHandler.m in Sources */,
+				4F572CC420848E15000EB7EC /* SalonDetailTableController.m in Sources */,
 				0D21DB7F206342DC0053721F /* VENTouchLockCreatePasscodeViewController.m in Sources */,
 				0D21DC3F2063476F0053721F /* SAMath.m in Sources */,
 				0D21DB64206342DC0053721F /* CSTableViewController.m in Sources */,
 				0D21DC332063471B0053721F /* CSProgramTableCell.m in Sources */,
 				0D3E00D520654AFC00B1E586 /* CSReusePicHeader.m in Sources */,
-				0D3E00BC2064E73200B1E586 /* CSSalonTableController.m in Sources */,
+				0D3E00BC2064E73200B1E586 /* SalonChoicenessTableController.m in Sources */,
 				0D21DBE7206343A40053721F /* VideoCollectionViewCell.m in Sources */,
 				0D21DB4E206342DC0053721F /* ISEResult.m in Sources */,
 				0D21DB2E206342DC0053721F /* KSYNameSlider.m in Sources */,

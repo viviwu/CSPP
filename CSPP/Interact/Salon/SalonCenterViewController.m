@@ -7,28 +7,41 @@
 //
 
 #import "SalonCenterViewController.h"
-#import "CSSalonTableController.h"
+#import "SalonChoicenessTableController.h"
 
 @interface SalonCenterViewController ()
 @property (weak, nonatomic) IBOutlet UIView *segView;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segCtr;
-
+@property (weak, nonatomic) SalonChoicenessTableController * salon;
 @end
 
 @implementation SalonCenterViewController
 
+- (SalonChoicenessTableController *)salon{
+    if (nil==_salon) {
+        _salon = [self salonStoryboardControllerWithID:@"SalonChoicenessTableController"];
+        [self addChildViewController:_salon];
+    }
+    return _salon;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CSSalonTableController * salon = [self salonStoryboardControllerWithID:@"CSSalonTableController"];
-    [self addChildViewController:salon];
-    [self.view addSubview:salon.view];
-    CGRect rect = salon.view.frame;
-    rect.origin.y = self.segView.frame.origin.y + self.segView.frame.size.height;
-    salon.view.frame = rect;
+    [self addChildViewController:self.salon];
     //self.segView.bottom
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
+    CGRect rect = self.salon.view.frame;
+    rect.origin.y = self.segView.frame.origin.y + self.segView.frame.size.height+28.0;
+    self.salon.view.frame = rect;
+    [self.view addSubview: self.salon.view];
 }
 
 - (void)didReceiveMemoryWarning {

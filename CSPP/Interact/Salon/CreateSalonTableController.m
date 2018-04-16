@@ -1,21 +1,22 @@
 //
-//  CSSalonViewController.m
+//  CreateSalonTableController.m
 //  CSPP
 //
 //  Created by vivi wu on 2018/3/23.
 //  Copyright © 2018年 vivi wu. All rights reserved.
 //
 
-#import "CSSalonViewController.h"
+#import "CreateSalonTableController.h"
 
-@interface CSSalonViewController ()
+@interface CreateSalonTableController ()
 <UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *footerView;
 @property(nonatomic, strong)NSArray * sectionData;
 @end
 
-@implementation CSSalonViewController
+@implementation CreateSalonTableController
 
 
 #define kHeader @"kHeader"
