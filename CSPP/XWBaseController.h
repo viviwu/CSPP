@@ -8,8 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
+#import "Constant.h"
 
-@interface XWBaseController : NSObject
+@interface XWBaseController : UIViewController
+@property (nonatomic, assign) CGRect safeFrame;
+@property (nonatomic, assign) CGFloat safeTop;
+@property (nonatomic, assign) CGFloat safeBottom;
+
+- (void)computeSafeArea;
+
+- (UIColor*)randomColor;
+
+-(id)readJsonFile:(NSString*)fileName;
 
 @end
 

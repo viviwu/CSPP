@@ -952,6 +952,9 @@
 		4F16B14D206CB37B00F20A45 /* news.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F16B14C206CB37B00F20A45 /* news.txt */; };
 		4F16B150206CB4FD00F20A45 /* CSTxtReadPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F16B14F206CB4FD00F20A45 /* CSTxtReadPlayerController.m */; };
 		4F16B153206CB56500F20A45 /* WPFColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F16B151206CB56500F20A45 /* WPFColorLabel.m */; };
+		4F1B0BCF2089956C00D4114F /* InteractHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B0BCE2089956C00D4114F /* InteractHomeViewController.m */; };
+		4F1B0BD72089963900D4114F /* CompositeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B0BD62089963900D4114F /* CompositeTableViewController.m */; };
+		4F1B0BD92089968C00D4114F /* CompositePlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1B0BD82089968C00D4114F /* CompositePlay.storyboard */; };
 		4F2164142084A262008B29EB /* zhihu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2164132084A262008B29EB /* zhihu.storyboard */; };
 		4F2167C32084BFDF008B29EB /* weibo_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F2167BB2084BFDF008B29EB /* weibo_3.json */; };
 		4F2167C42084BFDF008B29EB /* weibo_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F2167BC2084BFDF008B29EB /* weibo_2.json */; };
@@ -999,6 +1002,7 @@
 		4F55F7D220807A0800A03878 /* XWScrollBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55F7D020807A0800A03878 /* XWScrollBanner.m */; };
 		4F572CC420848E15000EB7EC /* SalonDetailTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F572CC320848E15000EB7EC /* SalonDetailTableController.m */; };
 		4F572CC920849C9F000EB7EC /* FMTextRead.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F572CC820849C9F000EB7EC /* FMTextRead.storyboard */; };
+		4F5E24E62085795C003269A0 /* navi_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5E24E52085795A003269A0 /* navi_blue@2x.png */; };
 		4F74CA0B206A1FE600365D02 /* city_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F74CA0A206A1FE500365D02 /* city_night.png */; };
 		4F74CA0D206A236A00365D02 /* ad_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F74CA0C206A236900365D02 /* ad_demo.jpg */; };
 		4F74CA10206A241000365D02 /* PPFlagshipStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74CA0F206A241000365D02 /* PPFlagshipStoreController.m */; };
@@ -2173,6 +2177,11 @@
 		4F16B14F206CB4FD00F20A45 /* CSTxtReadPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTxtReadPlayerController.m; sourceTree = "<group>"; };
 		4F16B151206CB56500F20A45 /* WPFColorLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFColorLabel.m; sourceTree = "<group>"; };
 		4F16B152206CB56500F20A45 /* WPFColorLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFColorLabel.h; sourceTree = "<group>"; };
+		4F1B0BCD2089956C00D4114F /* InteractHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractHomeViewController.h; sourceTree = "<group>"; };
+		4F1B0BCE2089956C00D4114F /* InteractHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractHomeViewController.m; sourceTree = "<group>"; };
+		4F1B0BD52089963900D4114F /* CompositeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeTableViewController.h; sourceTree = "<group>"; };
+		4F1B0BD62089963900D4114F /* CompositeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompositeTableViewController.m; sourceTree = "<group>"; };
+		4F1B0BD82089968C00D4114F /* CompositePlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompositePlay.storyboard; sourceTree = "<group>"; };
 		4F2164132084A262008B29EB /* zhihu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = zhihu.storyboard; sourceTree = "<group>"; };
 		4F2167BB2084BFDF008B29EB /* weibo_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_3.json; sourceTree = "<group>"; };
 		4F2167BC2084BFDF008B29EB /* weibo_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_2.json; sourceTree = "<group>"; };
@@ -2251,6 +2260,7 @@
 		4F572CC220848E15000EB7EC /* SalonDetailTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalonDetailTableController.h; sourceTree = "<group>"; };
 		4F572CC320848E15000EB7EC /* SalonDetailTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalonDetailTableController.m; sourceTree = "<group>"; };
 		4F572CC820849C9F000EB7EC /* FMTextRead.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FMTextRead.storyboard; sourceTree = "<group>"; };
+		4F5E24E52085795A003269A0 /* navi_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_blue@2x.png"; sourceTree = "<group>"; };
 		4F74CA0A206A1FE500365D02 /* city_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city_night.png; sourceTree = "<group>"; };
 		4F74CA0C206A236900365D02 /* ad_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ad_demo.jpg; sourceTree = "<group>"; };
 		4F74CA0E206A241000365D02 /* PPFlagshipStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPFlagshipStoreController.h; sourceTree = "<group>"; };
@@ -2961,6 +2971,11 @@
 		0D21DC46206359410053721F /* Interact */ = {
 			isa = PBXGroup;
 			children = (
+				4F1B0BCD2089956C00D4114F /* InteractHomeViewController.h */,
+				4F1B0BCE2089956C00D4114F /* InteractHomeViewController.m */,
+				4F1B0BD52089963900D4114F /* CompositeTableViewController.h */,
+				4F1B0BD62089963900D4114F /* CompositeTableViewController.m */,
+				4F1B0BD82089968C00D4114F /* CompositePlay.storyboard */,
 				0D96515E206135E5000EB341 /* CSInteractViewController.h */,
 				0D96515F206135E5000EB341 /* CSInteractViewController.m */,
 				4F2164152084B277008B29EB /* newsTV */,
@@ -3588,6 +3603,7 @@
 		0D9652E72062279E000EB341 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				4F5E24E52085795A003269A0 /* navi_blue@2x.png */,
 				4F81699820842ED5006C5476 /* circle.PNG */,
 				4F81699720842ED4006C5476 /* quota.PNG */,
 				4F81699920842ED6006C5476 /* radar.PNG */,
@@ -4411,6 +4427,7 @@
 				0D9656402062279F000EB341 /* circuit@3x.png in Resources */,
 				0D9655F72062279F000EB341 /* collaboration@3x.png in Resources */,
 				0D9654E62062279F000EB341 /* multiple_cameras@2x.png in Resources */,
+				4F1B0BD92089968C00D4114F /* CompositePlay.storyboard in Resources */,
 				0D9656812062279F000EB341 /* planner@3x.png in Resources */,
 				0D9656FE2062279F000EB341 /* approval@3x.png in Resources */,
 				0D96555A2062279F000EB341 /* image_file@2x.png in Resources */,
@@ -4786,6 +4803,7 @@
 				0D9656462062279F000EB341 /* genealogy@3x.png in Resources */,
 				0D96559C2062279F000EB341 /* reflesh3_60x55.png in Resources */,
 				0D96557D2062279F000EB341 /* backCircledLeft@2x.png in Resources */,
+				4F5E24E62085795C003269A0 /* navi_blue@2x.png in Resources */,
 				0D9655512062279F000EB341 /* sales_performance@2x.png in Resources */,
 				0D9654952062279E000EB341 /* leave@2x.png in Resources */,
 				0D9655482062279F000EB341 /* right_arow@2x.png in Resources */,
@@ -5354,6 +5372,7 @@
 				0D6B7BA920834BF6000B964D /* PPCorpsRankTableController.m in Sources */,
 				4FAAFBA3207F765600676796 /* ConsultMasterTableController.m in Sources */,
 				0D21DB6E206342DC0053721F /* PGPickerView.m in Sources */,
+				4F1B0BCF2089956C00D4114F /* InteractHomeViewController.m in Sources */,
 				0D21DB49206342DC0053721F /* TTSConfigViewController.m in Sources */,
 				0D21DB3F206342DC0053721F /* SBJson4Writer.m in Sources */,
 				0D21DB72206342DC0053721F /* PGDatePickManagerHeaderView.m in Sources */,
@@ -5380,6 +5399,7 @@
 				0D21DBEE206343A40053721F /* VodPlayOperationView.m in Sources */,
 				0D25D78320688B0A0000F215 /* TYVideoControlView.m in Sources */,
 				0D21DB2B206342DC0053721F /* KSYGetDeviceName.m in Sources */,
+				4F1B0BD72089963900D4114F /* CompositeTableViewController.m in Sources */,
 				0D6B7BAF208362ED000B964D /* PPFundPageViewController.m in Sources */,
 				0D25D74720687DA50000F215 /* CSCentralManager.m in Sources */,
 				0D3E00BF2064E75B00B1E586 /* CreateSalonTableController.m in Sources */,

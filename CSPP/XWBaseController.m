@@ -9,7 +9,59 @@
 #import "XWBaseController.h"
 
 @implementation XWBaseController
+- (void)computeSafeArea{
+    
+    UIEdgeInsets safeArea = UIEdgeInsetsZero;
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {
+        safeArea = self.view.safeAreaInsets;
+        _safeFrame = self.view.safeAreaLayoutGuide.layoutFrame;
+        _safeTop = safeArea.top;
+        _safeBottom = safeArea.bottom;
+        _safeTop=64.0;
+        if (kDevice_Is_iPhoneX) {
+            _safeTop =88.0;
+        }
+    } else {
+        // Fallback on earlier versions
+    }
+#endif
+}
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    delegate.allowRotation = NO;
+    
+    //    self.view.backgroundColor = [UIColor lightGrayColor];
+    // Do any additional setup after loading the view.
+}
+
+- (UIColor*)randomColor{
+    int R = (arc4random() % 256) ;
+    int G = (arc4random() % 256) ;
+    int B = (arc4random() % 256) ;
+    return KSYRGB(R, G, B);
+}
+
+-(id)readJsonFile:(NSString*)fileName{
+    NSString * founds_path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"json"];
+    if (founds_path) {
+        NSError * error = nil;
+        NSData *data = [[NSData alloc] initWithContentsOfFile:founds_path];
+        //        json = [jsonStr  stringByReplacingOccurrencesOfString:@":null" withString:@":\"\""];
+        id jsonid = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        if (error) {
+            NSLog(@"error==%@", error);
+        }
+        [NSDictionary changeType:jsonid];
+        return jsonid;
+    }else{
+        NSLog(@"%@-->founds_path = %@", fileName, founds_path);
+    }
+    return nil;
+}
 @end
 
 //@$$$$$$$$$$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$

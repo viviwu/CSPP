@@ -1,22 +1,18 @@
 //
-//  PPCorpPageViewController.m
+//  CompositeTableViewController.m
 //  CSPP
 //
-//  Created by vivi wu on 2018/4/16.
+//  Created by csco on 2018/4/20.
 //  Copyright © 2018年 vivi wu. All rights reserved.
 //
 
-#import "PPCorpPageViewController.h"
+#import "CompositeTableViewController.h"
 
-@interface PPCorpPageViewController ()<UITableViewDelegate, UITableViewDataSource>
-
-@property (weak, nonatomic) IBOutlet UIView *tableHeader;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *sectionHeader;
+@interface CompositeTableViewController ()
 
 @end
 
-@implementation PPCorpPageViewController
+@implementation CompositeTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,17 +24,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -46,31 +31,16 @@
 
 #pragma mark - Table view data source
 
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    return cell;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 1000.0;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 40.0;
-}
-
--(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return _sectionHeader;
-}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

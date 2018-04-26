@@ -9,6 +9,9 @@
 #import "PPFundPageViewController.h"
 
 @interface PPFundPageViewController ()
+{
+    UIColor * navi_color;
+}
 @property (weak, nonatomic) IBOutlet UIView *header;
 
 @end
@@ -17,25 +20,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"XXX基金";
     self.tableView.tableHeaderView = self.header;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"已经关注" style:UIBarButtonItemStylePlain target:self action:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"transparence"] forBarMetrics:UIBarMetricsDefault];
-    
+    navi_color = self.navigationItem.rightBarButtonItem.tintColor;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navi_blue"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor whiteColor]];
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:25]}];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:navi_color}];
+    [self.navigationItem.rightBarButtonItem setTintColor:navi_color];
 }
 
 - (void)didReceiveMemoryWarning {
